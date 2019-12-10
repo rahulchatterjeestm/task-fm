@@ -1,0 +1,27 @@
+.nav-bar{
+    height:75px;
+    background: #47cf73;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-tab{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    span{
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
+.active-tab{
+    background:white;
+    span{
+        color: #47cf73;
+    }
+    
+}

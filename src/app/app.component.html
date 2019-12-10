@@ -1,5 +1,8 @@
-<div>
-  <a [routerLink]="/contacts">Contacts</a>
-  <a [routerLink]="/favourites">Favourites</a>
+<div class="main-div">
+  <div class="nav-bar">
+    <a class="nav-tab" routerLink="/contacts" routerLinkActive="active-tab"><span>Contacts</span></a>
+    <a class="nav-tab" routerLink="/favourites" routerLinkActive="active-tab"><span>Favourites</span></a>
+  </div>
+  <router-outlet></router-outlet>
 </div>
-<router-outlet></router-outlet>
+
