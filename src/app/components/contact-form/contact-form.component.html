@@ -1,0 +1,22 @@
+<div class="overlay">
+    <form (ngSubmit)="OnSubmit()" #contactForm="ngForm">
+       
+        <label for="name">Name: </label>
+        <input [(ngModel)]="contact.name" #name="ngModel" name="name" type="text" id="name" required>
+        <div class="alert" *ngIf="!name.valid">Name is required</div>
+
+        <label for="email">Email: </label>
+        <input [(ngModel)]="contact.email" #email="ngModel" name="email" type="text" id="email" required>
+        <div class="alert" *ngIf="!email.valid">Email is required</div>
+
+        <label for="number">Number: </label>
+        <input [(ngModel)]="contact.number" #number="ngModel" name="number" type="number" id="number">
+
+        <div class="btnRow">
+            <button class="btn" type="submit" [disabled]="!contactForm.form.valid">{{btnTxt}}</button>
+        </div>
+        
+       <div class="close" (click)="CloseForm()">Close</div>
+    </form>
+    
+</div>

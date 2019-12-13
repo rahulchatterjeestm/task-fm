@@ -1,3 +1,9 @@
 <div class="routed-div">
-    Contacts works
+    
+    <app-contact-card *ngFor="let contact of contactArr; let i=index" [contact]="contact" [index]="i" (click)="OpenUpdateContact(i,contact)"></app-contact-card>
+    
+    <app-contact-form *ngIf="formShow" (showForm)="DisplayForm($event)" [contact]="contact" [index]="index"></app-contact-form>
+    
+    <div class="add" (click)="AddContact()">Add</div>
+    
 </div>

@@ -1,0 +1,25 @@
+.contactCard{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px grey;
+}
+.contactName, .contactEmail, .contactNumber{
+    padding:5px;
+    color: #54595d;
+}
+.favBtn{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    .favCircle{
+        border-radius: 50%;
+        border:solid 1px #fafa0f;
+        height: 100%;
+        width:100%;
+    }
+    .fav{
+        background: #fafa0f;
+    }
+}

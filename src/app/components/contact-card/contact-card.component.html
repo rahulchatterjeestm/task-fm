@@ -1,0 +1,10 @@
+<div class="contactCard">
+    <div class="contactDetails">
+        <div class="contactName">Name: {{contact.name}}</div>
+        <div class="contactEmail">Email: {{contact.email}}</div>
+        <div class="contactNumber">Number: {{contact.number}}</div>
+    </div>
+    <div class="favBtn" (click)="Makefav();$event.stopPropagation()">
+        <div class="favCircle" [ngClass]="{'fav': contact.isFavourite}"></div>
+    </div>
+</div>

@@ -1,3 +1,7 @@
 <div class="routed-div">
-    favourite works
+        <ng-container *ngFor="let contact of contactArr; let i=index">
+                <app-contact-card *ngIf="contact.isFavourite" [contact]="contact" [index]="i" (click)="OpenUpdateContact(i,contact)"></app-contact-card>
+        </ng-container>
+    
+        <app-contact-form *ngIf="formShow" (showForm)="DisplayForm($event)" [contact]="contact" [index]="index"></app-contact-form>
 </div>
